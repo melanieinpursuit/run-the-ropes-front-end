@@ -19,7 +19,7 @@ const WrestlerNewForm = () => {
         recommended_match: "",
         bio: "",
         image: ""
-    })
+})
 
     const addWrestler = (newWrestler) => {
         axios
@@ -48,22 +48,22 @@ const WrestlerNewForm = () => {
                 <table>
                     <tr>
                         <td><label htmlFor="name">Name:</label></td>
-                        <td><input
+                        <input
                         id="name"
                         type="text"
                         value={wrestler.name}
                         onChange={handleTextChange}
                         required
-                        /></td>
+                        />
                     </tr>
                     <tr>
                         <td><label htmlFor="birth_date">Birthday:</label></td>
                         <td><input
-                        id="birth_date"
-                        type="text"
-                        value={wrestler.birth_date}
-                        onChange={handleTextChange}
-                        /></td>
+                            id="birth_date"
+                            type="text"
+                            value={wrestler.birth_date}
+                            onChange={handleTextChange}
+                            /></td>
                     </tr>
                     <tr>
                         <td><label htmlFor="debut_date">Debut:</label></td>
