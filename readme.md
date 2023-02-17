@@ -2,7 +2,7 @@
 
 Check out the repo to my back-end here!: https://github.com/melanieinpursuit/run-the-ropes-back-end
 
-Check out my deployed back-end site here!: https://run-the-ropes-back-end.onrender.com/
+Check out my deployed back-end site here! The documentation for my back-end can be found in the back-end repo!: https://run-the-ropes-back-end.onrender.com/
 
 Check out my deployed front-end site here! (it's currently having some issues, but it will be fixed soon!): https://creative-sunburst-89d7db.netlify.app/
 
