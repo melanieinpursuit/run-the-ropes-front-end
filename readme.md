@@ -1,5 +1,8 @@
 # Ready to run the ropes?
 
+Check out my deployed back-end site here!: https://run-the-ropes-back-end.onrender.com/
+Check out my deployed front-end site here! (it's currently having some issues, but it will be fixed soon!): https://app.netlify.com/sites/creative-sunburst-89d7db/overview
+
 Welcome to Run The Ropes, a wrestling database made for new and experienced wrestling fans alike! My goal is to make a readable site for people to see and learn all about wrestlers and professional wrestling in general! There are a lot of features I want to add in the future so please keep a look out for those.
 
 
