@@ -2,6 +2,10 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom"
 import Comments from './Comments'
+import '../CSS/Show.css'
+import backbutton from '../images/backbutton.png'
+import editbutton from '../images/editbutton.png'
+import deletebutton from '../images/deletebutton.png'
 const API = process.env.REACT_APP_BASE_URL
 
 function WrestlerDetails () {
@@ -34,15 +38,12 @@ function WrestlerDetails () {
 
     return (
         <article>
-            <div>
+            <div className="wrestler-details">
                 <img src={wrestler.image} alt='wrestler' />
                 <h1>{wrestler.name}</h1> 
-               <table>
-                <th>
-                    <p>Wrestler Details</p>
-                </th>
+               <table className="wrestler-info">
                 <tr>
-                    <td>
+                    <td className="table-title">
                         <h3>Birthday:</h3>
                     </td>
                     <td>
@@ -50,7 +51,7 @@ function WrestlerDetails () {
                     </td>
                 </tr>
                 <tr>
-                    <td>
+                    <td className="table-title">
                         <h3>Debut:</h3>
                     </td>
                     <td>
@@ -58,7 +59,7 @@ function WrestlerDetails () {
                     </td>
                 </tr>
                 <tr>
-                    <td>
+                    <td className="table-title">
                         <h3>Gender</h3>
                     </td>
                     <td>
@@ -66,7 +67,7 @@ function WrestlerDetails () {
                     </td>
                 </tr>
                 <tr>
-                    <td>
+                    <td className="table-title">
                         <h3>Height (in cm):</h3>
                     </td>
                     <td>
@@ -74,7 +75,7 @@ function WrestlerDetails () {
                     </td>
                 </tr>
                 <tr>
-                    <td>
+                    <td className="table-title">
                         <h3>Weight (in kg):</h3>
                     </td>
                     <td>
@@ -82,7 +83,7 @@ function WrestlerDetails () {
                     </td>
                 </tr>
                 <tr>
-                    <td>
+                    <td className="table-title">
                         <h3>Billed From:</h3>
                     </td>
                     <td>
@@ -90,7 +91,7 @@ function WrestlerDetails () {
                     </td>
                 </tr>
                 <tr>
-                    <td>
+                    <td className="table-title">
                         <h3>Cagematch Page:</h3>
                     </td>
                     <td>
@@ -98,7 +99,7 @@ function WrestlerDetails () {
                     </td>
                 </tr>
                 <tr>
-                    <td>
+                    <td className="table-title">
                         <h3>Recommended Match:</h3>
                     </td>
                     <td>
@@ -106,7 +107,7 @@ function WrestlerDetails () {
                     </td>
                 </tr>
                 <tr>
-                    <td>
+                    <td className="table-title">
                         <h3>Short Bio:</h3>
                     </td>
                     <td>
@@ -114,24 +115,25 @@ function WrestlerDetails () {
                     </td>
                 </tr>
                </table>
-               <div>
-                    <div>
+               <div className="buttons">
+                    <div className='back-button'>
                         <Link to={`/wrestlers`}>
-                            <button>Back</button>
+                        <img src={backbutton} alt='backbutton' />
                         </Link>
                     </div>
-                    <div>
+                    <div className='edit-button'>
                         <Link to={`/wrestlers/${id}/edit`}>
-                            <button>Edit</button>
+                        <img src={editbutton} alt='editbutton' />
                         </Link>
                     </div>
-                    <div>
+                    <div className='delete-button'>
                         <div>
-                            <button onClick={deleteWrestler}>
-                                Delete
+                            <button className='delete-button' onClick={deleteWrestler}>
+                            <img src={deletebutton} alt='deletebutton' />
                             </button>
-            <Comments />
                         </div>
+                        <br />
+            <Comments />
                     </div>
                </div>
             </div>

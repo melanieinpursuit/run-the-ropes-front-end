@@ -1,0 +1,37 @@
+.comments {
+    display: grid;
+    grid-template-rows: 1fr;
+    background-color: black;
+    color: #cf2b65;
+    padding: 20px;
+    justify-content: center;
+    font-family: "Lexend Zetta", sans-serif;
+}
+
+.edit {
+    display: grid;
+    grid-template-rows: 1fr;
+    background-color: black;
+    color: #cf2b65;
+    padding: 20px;
+    justify-content: center;
+}
+
+@font-face {
+    font-family: "Lexend Zetta";
+    src: url(https://fontsource.org/fonts/lexend-zetta);
+}
+  
+.comments {
+    float: right;
+    margin: auto;
+    padding-left: 200px;
+    padding-right: 200px;
+    border: 2px solid #5136aa;
+    box-shadow: 0px 0px 2px silver;
+    background-color: black;
+}
+
+input {
+    margin: 0px;
+}

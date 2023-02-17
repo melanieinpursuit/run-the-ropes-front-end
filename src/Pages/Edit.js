@@ -1,5 +1,6 @@
 import React from 'react'
 import WrestlerEditForm from '../Components/WrestlerEditForm'
+import '../CSS/Edit.css'
 
 const Edit = () => {
     return (

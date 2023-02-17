@@ -1,19 +1,21 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import header from '../images/runtheropesagain.png'
+import button from '../images/addawrestler.png'
 import '../CSS/NavBar.css'
 
 const NavBar = () => {
     return (
         <nav>
-            <h1>
+            <div className='header'>
                 <Link to='/wrestlers'>
-                    <p>All Wrestlers</p>
+                    <img className='header' src={header} alt='header' />
                 </Link>
-            </h1>
-            <ul>
+            </div>
+            <ul className='newnav'>
                 <li>
                     <Link to='/wrestlers/new'>
-                        <p>Add Wrestler</p>
+                        <img className='button' src={button} alt='button' />
                     </Link>
                 </li>
             </ul>

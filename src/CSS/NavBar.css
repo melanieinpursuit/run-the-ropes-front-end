@@ -1,0 +1,24 @@
+.header {
+    background-color: black;
+}
+
+.header {
+    width: 100%;
+    margin: 0px;
+    background-image: url(https://opengameart.org/sites/default/files/512x512_purple_nebula_1.png);
+    background-size: 25%;
+}
+
+.newnav {
+    list-style: none;
+    background-color: black;
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-image: url(https://opengameart.org/sites/default/files/512x512_purple_nebula_1.png);
+    background-size: 20%;
+}
+
+.button {
+    width: 25%;
+}

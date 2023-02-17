@@ -1,6 +1,7 @@
 import axios from 'axios'
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
+import '../CSS/Comments.css'
 import Comment from './Comment'
 import CommentForm from './CommentForm'
 
@@ -64,8 +65,8 @@ function Comments () {
             }, [id])
 
             return (
-                <section>
-            <h2>Comments</h2>
+                <section className='comments'>
+            <h2 className='comment-title'>Comments</h2>
             <CommentForm handleSubmit={handleAdd}>
                 <h3>Got something to say?</h3>
             </CommentForm>

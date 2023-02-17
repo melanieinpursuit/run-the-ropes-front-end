@@ -1,4 +1,5 @@
 import React from 'react'
+import '../CSS/FourOFour.css'
 
 const FourOFour = () => {
     return (

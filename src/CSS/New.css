@@ -1,0 +1,54 @@
+.submit .back-button {
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid #5136aa;
+    text-align: center;
+    background-color: black;
+    color: #cf2b65;
+    font-family: "Lexend Zetta", sans-serif;
+    font-size: 13px;
+}
+
+div.form {
+    color: #5136aa;
+    background-color: black;
+    padding: 20px;
+    display: inline-block;
+    vertical-align: bottom;
+    text-align: center;
+}
+
+form {
+    color: #cf2b65;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+@font-face {
+    font-family: "Lexend Zetta";
+    src: url(https://fontsource.org/fonts/lexend-zetta);
+}
+
+h2 {
+    font-family: "Lexend Zetta", sans-serif;
+    text-align: center;
+    color:#5136aa;
+    text-decoration: underline 4px #5136aa;
+    padding-top: 30px;
+    text-shadow: 2px 2px 2px #2c1772;;
+}
+
+label {
+    background-color: black;
+    font-family: "Lexend Zetta", sans-serif;
+    text-decoration: solid 2px underline;
+}
+
+input {
+    background-color: black;
+    color: #cf2b65;
+    font-family: Georgia;
+}
